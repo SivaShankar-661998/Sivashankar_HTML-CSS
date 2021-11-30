@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Electricity Bill</title>
+        <link rel="stylesheet" href="Style/Style.css">
+        <script src="Script/Script.js"></script>
+    </head>
+    <body>
+        <!-- Home Page for TamilNadu Electricity Board -->
+        <h1 id="TB">TamilNadu Electricity Board</h1>
+        <div id="home">
+            <h2>Home Page</h2>
+            <button onclick="loginPage()">UserLogin</button><br><br>
+            <button onclick="adminPage()">AdminLogin</button>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login">
+            <h2>UserLogin</h2>
+            <button onclick="register()">Register</button><br><br>
+            <button onclick="userLogin()">Existing User</button>
+        </div>
+
+        <!-- Register Page -->
+        <div id="registerPage">
+            <h2>Register Page</h2>
+            <input id = "name" type="text" placeholder="Enter the name"><br><br>
+            <input id = "phoneNo" type="number" placeholder="Enter the phoneNumber"><br><br>
+            <input id = "city" type="text" placeholder="Enter the city"><br><br>
+            <button id="Add" onclick="addNewUser()">Add</button>
+            <button id="Exit" onclick="login()">Exit</button>
+        </div>
+
+        <!-- Validation Page -->
+        <div id="validation">
+            <h2>Login Page</h2>
+            <input type="text" placeholder="Enter User Id">
+            <button id="idButton" onclick="option()">Click</button>
+        </div>
+
+        <!-- Option Page -->
+        <div id="option">
+            <h2>Option Page</h2>
+            <button id="historyvalue" onclick="userHistory()">Show History</button>
+            <button id="payment" onclick="userPay()">Pay Bill</button>
+            <button id="exit" onclick="login()">Exit</button>
+            
+        </div>
+
+        <!-- History Page -->
+        <div id="historyPage">
+            <h2>History Page</h2>
+            <p id="userHistoryPage">History</p>
+            <p id="userDueDate">DueDate</p>
+            <p id ="userNameHistory">Name</p>
+        </div>
+
+        <!-- Payment Page -->
+        <div id="pay">
+            <h2>Payment Page</h2>
+            <label for="bill">The bill is :</label>
+            <label id="billPay" for="billValue">The bill value</label><br><br>
+            <label for="Duedate">Due Date</label>
+            <label for="DueValue" id="DueValuePay">DueValue</label>
+            <button id="userFinalPay" onclick="payToHome()">pay</button>
+        </div>
+        
+        <!-- Admin Page -->
+        <div id="adminPage">
+            <h2>Admin Page</h2>
+            <input id = userIdAdmin type="text" placeholder="Enter userId"><br><br>
+            <button onclick="adminLogin()">Ok</button><br><br>
+        </div>
+
+        <!-- Bill Page -->
+        <div id="billPage">
+            <h2>Bill Page</h2>
+            <input id="prevUnit" type="number" placeholder="Previous Unit" ><br><br>
+            <input id="currUnit" type="number" placeholder="Current Unit" ><br><br>
+            <label for="dueDate">Fix Due Date</label>
+            <input id = "date" type="date"><br><br>
+            <label for="consumedUnit">Price to pay</label><br><br>
+            <label id="conValue" for="consumedValue">ConsumedValue</label><br><br>
+            <button id="bSubmit" onclick="billSubmit()">submit</button>     
+        </div>   
+
+        <!-- Calculation Page -->
+        <div id="calculatedBill">
+            <h2>Bill Price</h2>
+            <label for="bill">The bill is :</label>
+            <label id="bill" for="billValue">The bill value</label><br><br>
+            <label for="Duedate">Due Date</label>
+            <label for="DueValue" id="DueValue">DueValue</label>
+            <button id="Exit" onclick="billToLogin()">Exit</button>            
+        </div>
+    </body>
+</html>

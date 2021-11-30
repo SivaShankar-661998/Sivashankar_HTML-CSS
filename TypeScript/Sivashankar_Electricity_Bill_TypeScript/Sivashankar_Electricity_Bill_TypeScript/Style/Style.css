@@ -1,0 +1,45 @@
+/* Text align */
+body
+{
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+/* Bacgroud color */
+
+
+#login,#registerPage,#validation,#option,#history,#adminPage,#billPage,#home,#adminPage
+{
+    background-color: white;
+}
+
+/* Hiding pages */
+
+#login,#registerPage,#validation,#option,#history,#adminPage,#billPage,#home,#calculatedBill,#historyPage,#pay
+{
+    display: none;
+}
+#home
+{
+    display: block;
+}
+
+/* Button design */
+button
+{
+    width: 150px;
+    height: 25px;
+    margin-left: 10px;
+    border: 30px;
+    background-color:rgb(0, 255, 13);
+    color: black;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+#TB
+{
+    text-align: center;
+}
