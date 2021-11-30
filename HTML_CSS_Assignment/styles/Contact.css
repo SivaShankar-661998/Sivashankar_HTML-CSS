@@ -1,0 +1,66 @@
+#header
+{
+    background-color:rgb(241, 249, 255);;
+    position: fixed;
+    margin:auto;
+}
+#ulHeader
+{
+    display: block;
+}
+li{
+    display: inline;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 25px;
+    }
+.row {margin:80px 40px;}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+.card{
+    border-radius: 15px;
+    height: 200px;
+    padding: 20px;
+    text-align: left;
+    border: 2px black;
+}
+.term{
+    color: orangered;
+    text-decoration: none;
+}
+#form{
+    width: 526.4px;
+    height: 661px;
+    border: 2px solid black;
+    
+}
+#form-head{
+    padding: 33px 226px;
+}
+#form-content{
+
+    padding: 40px;
+}
+body{
+    background-image: url(../images/Vector-1.png);
+}
+form{
+    float: right
+
+}
+#header{
+    position: fixed;
+}
+.one{
+    float: right
+}
+
